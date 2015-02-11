@@ -56,7 +56,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;    
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
      -webkit-flex-direction: column;
@@ -116,6 +116,10 @@ header.bk-header {
 .widget.companyname {
     display: inline-block;
     vertical-align: middle;
+    padding: 0;
+    a {
+	    vertical-align: middle
+    }
 }
 
 /* ===============================
@@ -162,7 +166,7 @@ footer.bk-footer {
             }
         }
         li {
-            // Folder 
+            // Folder
             &.folder {
                 margin-right: 0;
                 padding-right:10px;
@@ -174,6 +178,7 @@ footer.bk-footer {
                     display: none;
                 }
                 @media @tablet {
+	                padding-right: 0;
                     background-image: image('/images/arrow-left.png'), image('/images/arrow-down.png');
                     background-position: 10px center, right center;
                     background-repeat: no-repeat;
@@ -188,7 +193,7 @@ footer.bk-footer {
             }
             // Dropdown Menu
             &:hover {
-                ul {    
+                ul {
                     min-width: 140px;
                     max-width: 220px;
                     background-color: darken(@color-swatch7,3%);
@@ -275,12 +280,12 @@ footer.bk-footer {
                     max-width: 400px;
                     padding: 40px;
                     margin: 0 auto;
-                    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.7); 
+                    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.7);
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
                 }
-                h2 { 
+                h2 {
                     display: inline-block;
                     line-height: 24px;
                     border-bottom: 2px solid rgba(255,255,255,0.3);
@@ -297,26 +302,23 @@ footer.bk-footer {
                         margin: 0;
                     }
                 }
-                button { 
+                button {
                     padding: 0 12px;
                     box-shadow: 0px 2px 0px darken(@color-swatch3,15%);
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                  font-size: bkscale(@font-swatch7-font-size,0.75);
+                     font-size: bkscale(@font-swatch7-font-size,0.75);
+                    -webkit-transition: background-color 0.15s ease-in-out;
+                    -moz-transition: background-color 0.15s ease-in-out;
+                    -o-transition: background-color 0.15s ease-in-out;
+                    transition: background-color 0.15s ease-in-out;
                     @media @mobile {
                         padding: 0 6px;
                         margin: 6px 0 0;
                         font-size: bkscale(@font-swatch7-font-size,0.6);
                     }
-                    &:hover {
-                        box-shadow: 0px 2px 0px darken(@font-swatch7-background-color-hover,15%);
-                        -webkit-transition: background-color 0.15s ease-in-out;
-                        -moz-transition: background-color 0.15s ease-in-out;
-                        -o-transition: background-color 0.15s ease-in-out;
-                        transition: background-color 0.15s ease-in-out;
-                    }
-                } 
+                }
             }
         }
         .feature-btn {
@@ -331,7 +333,7 @@ footer.bk-footer {
    =============================== */
 
 .widget.clicktocall a {
-  
+
   font-family: @font-swatch5-font-family;
   font-weight:@font-swatch5-font-weight;
   color: @font-swatch5-color;
@@ -409,12 +411,12 @@ footer.bk-footer {
 
 // General
 .widget.button button,
-button.btn, 
-.widget.profile form button, 
-.contactform button.btn, 
+button.btn,
+.widget.profile form button,
+.contactform button.btn,
 .btn,
-.widget.dropbox button, 
-.checkout-order-button, 
+.widget.dropbox button,
+.checkout-order-button,
 .checkout-empty-link,
 .widget.tweet a,
 .widget.paypalbuynow .widget.button.paypal,
@@ -430,16 +432,14 @@ button.btn,
     border: 0;
     background-color: @font-swatch7-background-color;
     border-radius: 4px;
-    box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
     color: @font-swatch7-color;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
     &:hover {
         background-color: @font-swatch7-background-color-hover;
-        box-shadow: 0px 2px 0px darken(@font-swatch7-background-color-hover,15%);
         cursor: pointer;
-        -webkit-transition: background-color 0.15s ease-in-out;
-        -moz-transition: background-color 0.15s ease-in-out;
-        -o-transition: background-color 0.15s ease-in-out;
-        transition: background-color 0.15s ease-in-out;
         text-decoration: none;
     }
 }
@@ -668,7 +668,6 @@ div.twitter-profile-pic {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
 }
 
 
@@ -685,13 +684,10 @@ div.twitter-profile-pic {
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 border-radius: 4px;
-                box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
-                &:hover {
-                    -webkit-transition: background-color 0.15s ease-in-out;
-                    -moz-transition: background-color 0.15s ease-in-out;
-                    -o-transition: background-color 0.15s ease-in-out;
-                    transition: background-color 0.15s ease-in-out;
-                }
+                -webkit-transition: background-color 0.15s ease-in-out;
+                -moz-transition: background-color 0.15s ease-in-out;
+                -o-transition: background-color 0.15s ease-in-out;
+                transition: background-color 0.15s ease-in-out;
             }
         }
     }
@@ -706,12 +702,12 @@ div.twitter-profile-pic {
   display: block;
   font-size: @font-swatch5-font-size;
   font-family: @font-swatch5-font-family;
-  color: @font-swatch6-color;
+  color: @font-swatch5-color;
   padding-bottom: 2px;
 }
 
 .bk-profile-address p, .widget.profile ul.twitter p {
-    color: @font-swatch6-color;
+    color: @font-swatch5-color;
 }
 
 footer.bk-footer .widget.profile .bk-profile-socialicons span a {
@@ -722,7 +718,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 .widget.profile a {
   font-size: @font-swatch5-font-size;
   font-family: @font-swatch5-font-family;
-  color: @font-swatch6-color;
+  color: @color-swatch4;
 }
 
 .widget.profile a:hover {
@@ -788,7 +784,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
         padding: 10px 10px 5px;
     }
     .slideshow-widget {
-        // Arrows 
+        // Arrows
         .btn-prev,
         .btn-next {
             background-color: darken(@color-swatch1,5%);
@@ -823,7 +819,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
         .btn-next {
             background-image: image('/images/slideshow-arrow-right.png');
             background-repeat: no-repeat;
-            background-position: center;    
+            background-position: center;
             border-right: none;
             right: 0;
             -webkit-border-top-left-radius: 7px;
@@ -833,7 +829,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
             border-top-left-radius: 7px;
             border-bottom-left-radius: 7px;
         }
-        // Play Button 
+        // Play Button
         .btn-play {
             background: rgba(0,0,0,0.5);
             top: 41%;
@@ -866,7 +862,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
             }
         }
     }
-    // Slideshow Controls 
+    // Slideshow Controls
     .slideshow-widget-controls {
         text-align: center;
         margin-top: 0;
@@ -1082,7 +1078,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 max-width: 100%!important;
             }
         }
-        @media (max-width: 360px) { 
+        @media (max-width: 360px) {
             max-width: 100%;
         }
     }
@@ -1145,7 +1141,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 outline: none;
             }
         }
-    }   
+    }
     .basket-summary-subtotal {
         background-color: @color-swatch1;
     }
@@ -1244,7 +1240,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
             opacity: 0.3;
         }
     }
-    // 
+    //
     .js-shipping-opts {
         border-bottom: 1px solid darken(@color-swatch1,10%);
         padding-bottom: 20px;
@@ -1383,18 +1379,16 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 border-radius: 4px;
-                box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
                 padding: 9px 19px;
                 margin: 0;
                 border: none;
                 text-decoration: none;
+                -webkit-transition: background-color 0.15s ease-in-out;
+                -moz-transition: background-color 0.15s ease-in-out;
+                -o-transition: background-color 0.15s ease-in-out;
+                transition: background-color 0.15s ease-in-out;
                 &:hover {
-                    -webkit-transition: background-color 0.15s ease-in-out;
-                    -moz-transition: background-color 0.15s ease-in-out;
-                    -o-transition: background-color 0.15s ease-in-out;
-                    transition: background-color 0.15s ease-in-out;
                     background-color:@font-swatch7-background-color-hover;
-                    box-shadow: 0px 2px 0px darken(@font-swatch7-background-color-hover,15%);
                 }
             }
         }
@@ -1559,7 +1553,6 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
-    box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
 
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
@@ -1567,8 +1560,12 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     background-color: @font-swatch7-background-color;
     color: @color-swatch1;
     text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
   }
-  
+
   .widget.clicktocall a:hover {
     background-image: image('/images/ic-call.svg');
     background-color: @font-swatch7-background-color;
@@ -1577,12 +1574,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     background-repeat:no-repeat;
     padding: 11px 25px 11px 43px;
     color: @font-swatch7-color;
-    box-shadow: 0px 2px 0px darken(@font-swatch7-background-color-hover,15%);
     cursor: pointer;
-    -webkit-transition: background-color 0.15s ease-in-out;
-    -moz-transition: background-color 0.15s ease-in-out;
-    -o-transition: background-color 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out;
   }
 
 }
