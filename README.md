@@ -1,7 +1,2 @@
-Lift Module
-===========
-
-BaseKit's Lift Module Template (Standard)
-
-Changes 2013-06-18 - Giulietta
-+ Updated image directories to match code-base
+# ml-construction
+Construction theme based upon [Lift Module](https://github.com/basekit-templates/liftmodule)
