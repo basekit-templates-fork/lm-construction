@@ -1,7 +1,7 @@
 {
-	"name":"Lift Module",
-	"thumbnail":"liftmodule.png",
-	"screenshot":"liftmodule.png",
+	"name":"LM Construction",
+	"thumbnail":"lm-construction.png",
+	"screenshot":"lm-construction.png",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
@@ -15,13 +15,13 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#fbac71",
-            "color3":"#96d3ed",
+            "color1":"#FFFCFA",
+            "color2":"#CA5400",
+            "color3":"#145B88",
             "color4":"#838383",
             "color5":"#acacac",
             "color6":"#ffffff",
-            "color7":"#313131"
+            "color7":"#0B4061"
         },
         "Swatch 2": {
             "color1":"#f8f9fa",
@@ -61,9 +61,9 @@
         }
     },
     "fontSwatch": {
-       "title": "Karla",
+       "title": "Montserrat Alternates",
         "font1": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "30px",
             "font-weight": "400",
             "line-height": "38px",
@@ -71,7 +71,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "36px",
@@ -79,7 +79,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -87,7 +87,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -95,7 +95,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
@@ -103,7 +103,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "34px",
@@ -114,7 +114,7 @@
             "background-color-hover": "@color-swatch3"
         },
         "font7": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "32px",
@@ -124,7 +124,7 @@
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
@@ -132,7 +132,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "26px",
@@ -140,7 +140,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Montserrat Alternates\", \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "24px",
             "font-weight": "400",
             "line-height": "24px",
