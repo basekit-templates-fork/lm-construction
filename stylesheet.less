@@ -432,6 +432,7 @@ button.btn,
 .blogsearch form button,
 .productlist-search button,
 .widget.signupform fieldset button.btn {
+    display: inline-block;
     padding: 9px 26px;
     border: 0;
     background-color: @font-swatch7-background-color;
@@ -463,14 +464,13 @@ button.btn,
 
 // PayPal, Dropbox, Tweet
 .widget.paypalbuynow .widget.button.paypal,
-.widget.dropbox button {
-    padding: 4px 8px 4px 40px;
+.widget.dropbox button,
+.widget.tweet a {
+	background-position: 14px center;
+    padding-left: 45px;
 }
 .widget.tweet {
     padding: 0;
-    a {
-        padding: 7px 8px 10px 40px;
-    }
 }
 
 // -----------------------------
@@ -478,7 +478,10 @@ button.btn,
 // -----------------------------
 
 .widget.signupform {
-    input.email { margin-right: 10px; }
+    input.email {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 }
 
 .widget.signupform form input {
@@ -1282,6 +1285,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 
 .blog-search-input {
     margin-right: 20px;
+    vertical-align: middle;
 }
 
 .blog-post-title {
@@ -1405,6 +1409,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 }
 
 .widget.profile form fieldset input {
+    vertical-align: middle;
     height: 52px;
     width: 63%;
     position: relative;
@@ -1508,7 +1513,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 }
 
 .widget.blogsearch form button, .widget.profile form button, .widget.signupform form button {
-    margin-top:10px;
+    vertical-align: middle;
 }
 
 .menu-subsection-promoted {
